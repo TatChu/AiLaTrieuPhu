@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="xyz.dichvuso.ailatrieuphumobile.Activity_Play"
+    android:background="@drawable/bgplay">
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonStop"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/stop"
+        android:textColor="#FFF"
+        android:layout_marginRight="30dp"
+        />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonHelpCall"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/buttonStop"
+        android:layout_toStartOf="@+id/buttonStop"
+        android:layout_marginRight="8sp"
+        android:background="@drawable/phone"
+        android:textColor="#FFF"
+        />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonHelp50_50"
+        android:layout_alignBottom="@+id/buttonHelpCall"
+        android:layout_toLeftOf="@+id/buttonHelpCall"
+        android:layout_toStartOf="@+id/buttonHelpCall"
+        android:layout_marginRight="8sp"
+
+        android:background="@drawable/fiftyfifty" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonHelpAudience"
+        android:layout_alignBottom="@+id/buttonHelp50_50"
+        android:layout_toLeftOf="@+id/buttonHelp50_50"
+        android:layout_toStartOf="@+id/buttonHelp50_50"
+        android:layout_marginRight="8sp"
+        android:background="@drawable/audience"
+        android:textColor="#FFF"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Nôi dung câu hỏi"
+        android:id="@+id/textViewQuestion"
+        android:layout_marginTop="63dp"
+        android:textColor="#0e11c5"
+        android:layout_below="@+id/buttonStop"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phương án A"
+        android:id="@+id/buttonAnsA"
+        android:layout_below="@+id/textViewQuestion"
+        android:layout_marginTop="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/bgquestion"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="5dp"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phương án B"
+        android:id="@+id/buttonAnsB"
+        android:layout_below="@+id/buttonAnsA"
+        android:layout_alignRight="@+id/buttonAnsA"
+        android:layout_alignEnd="@+id/buttonAnsA"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ffffff"
+        android:background="@drawable/bgquestion"
+        android:layout_marginBottom="5dp"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phương án C"
+        android:id="@+id/buttonAnsC"
+        android:layout_below="@+id/buttonAnsB"
+        android:layout_alignRight="@+id/buttonAnsA"
+        android:layout_alignEnd="@+id/buttonAnsA"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ffffff"
+        android:background="@drawable/bgquestion"
+        android:layout_marginBottom="5dp"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phương án D"
+        android:id="@+id/buttonAnsD"
+        android:layout_below="@+id/buttonAnsC"
+        android:layout_alignRight="@+id/buttonAnsA"
+        android:layout_alignEnd="@+id/buttonAnsA"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ffffff"
+        android:background="@drawable/bgquestion" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonChangeQuestion"
+        android:background="@drawable/change"
+        android:textColor="#FFF"
+        android:layout_alignTop="@+id/buttonHelpAudience"
+        android:layout_toLeftOf="@+id/buttonHelpAudience"
+        android:layout_toStartOf="@+id/buttonHelpAudience"
+        android:layout_marginRight="8sp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/txt_time"
+        android:layout_below="@+id/buttonHelpCall"
+        android:layout_marginBottom="5dp"
+        android:textColor="#a81694"
+        android:textSize="25sp"
+        android:text="TimeDown"
+        android:layout_marginLeft="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignRight="@id/buttonAnsA"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/txt_CauSo"
+        android:textColor="#a81694"
+        android:textSize="25sp"
+        android:text="Câu số"
+        android:layout_below="@+id/buttonHelp50_50"
+        android:layout_toLeftOf="@+id/buttonHelp50_50"
+        android:layout_toStartOf="@+id/buttonHelp50_50"
+        android:layout_alignLeft="@id/buttonAnsB"/>
+
+
+
+</RelativeLayout>
